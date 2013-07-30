@@ -22,6 +22,16 @@
 
 <a href="<%= request.getContextPath()%>/act/hi/jack">hi jack</a>
 
+<hr/>
+this dtd works for spring mvc 3.0.5, have not test other versions
+<pre>
+    <web-app id="WebApp_ID" version="2.4"
+             xmlns="http://java.sun.com/xml/ns/j2ee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"></web-app>
+</pre>
+
 </body>
 
 </html>
