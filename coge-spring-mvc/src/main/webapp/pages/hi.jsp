@@ -10,6 +10,11 @@
     <title></title>
 </head>
 <body>
+<div style="color: #f55; font-weight: bold;">
+    this jsp file's name should not contain underscore,
+    or value of model variables won't expand.
+</div>
+
 <h1>Message : ${message}</h1>
 
 </body>
