@@ -2,8 +2,7 @@ package com.hch.coge;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,5 +22,18 @@ public class HelloAction {
 
         return "hi";
 
+    }
+
+    @RequestMapping(method = RequestMethod.GET, params = "name")
+    public String hi2(@RequestParam("name") String name, ModelMap model) {
+        model.addAttribute("message", name);
+
+        return "hi";
+    }
+
+
+    @RequestMapping(value = "/{name}")
+    public @ResponseBody String hiFoo(@PathVariable("name") String name) {
+        return "hi " + name + " @ResponseBody";
     }
 }

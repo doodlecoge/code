@@ -5,6 +5,7 @@
   Time: 10:47 AM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title></title>
@@ -17,5 +18,10 @@
 
 <h1>Message : ${message}</h1>
 
+<br/>
+
+<a href="<%= request.getContextPath()%>/act/hi/jack">hi jack</a>
+
 </body>
+
 </html>
