@@ -11,6 +11,7 @@
         <module>coge-core</module>
         <module>coge-spring-mvc</module>
         <module>coge-web</module>
+        <module>coge-maven</module>
     </modules>
     <packaging>pom</packaging>
 
